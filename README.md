@@ -11,15 +11,28 @@ Give a summary description of Four design patterns that you choose from the foll
 
 # Adapter
 
-- This method is a structural design pattern method which finds its applicability for already existing projects / softwares
-- As in the name, this method helps in adapting incompatible functions or objects but providing adapting objects or functions
-- The adapting function helps in converting the  sender paramateres / objects  into form of receiver function / object using the desired adapter service 
-- The idea revolves around the fact of reusing of existing solution for extention of the product by adapting which 
-- Already existing proven solution, if needs to be used then adapter can be used in case of incompatible one
-- The idea revolves around the fact of reusing of existing solution for extention of the product by easy interfacing thus reducing testing efforts and development time
+- This method is a structural design pattern
+- As in the name, this method helps in adapting incompatible functions or objects by providing adapting objects or functions
+- The idea revolves around the fact of reusing  existing solution for extention of the software feature by easy interfacing thus reducing testing efforts and development time
+
+How it works
+- The adapting function helps in converting the  sender parameteres / objects  into form of receiver function / object using the desired adapter services 
+
+Use case
+- Already existing validated solution, if needs to be reused then adapter can be used in case of solving incompatiblity issues
+- Also in case when a base class calculations are expected in different  formats by it's child classes, then adapter can be used for each child class instead of designing base class to suit / meet all needd
+
+Pros
+- Existing solutions cas ne resued
+- Modification scope is less, hence less validation time
+
+Cons
 - But incase of more paramaters / objects to be interfaced, then additional memory is consumed for the new interfacing objects created
 - This method is not for a new developments, only applicable or useful for existing
-- Application : In case of SW sharing or 3rd party SW reuse where developing new function is time consuming
+
+Real World use case
+- In case of SW sharing or 3rd party SW is avaialable for reuse while modification is time consuming. 
+- Say in our previous assignments, we had a BMS system in which sensor was earlier measuring in celcius, while the same was then extended to support other temperature units  like fahrenheit where a "unit conversion" adapting function was used
 
 
 # Observer 
