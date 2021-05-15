@@ -88,10 +88,26 @@ Give a summary description of Four design patterns that you choose from the foll
 
 
 # Bridge 
-- This method is structural design pattern and is used in large cases where multi level split is feasible as objects turn out ot be combinations of sub levels
+- This method is structural design pattern
+- It is used in large cases where multi level split is feasible as objects turn out ot be combinations of sub levels
+
+**How it works**
+- In case the product is characteristed by 3 parameters say shape , colour and type , then the 3^3 = 27  comibinations are possible , hence it might need a lot of objects to be created. Incase if a new type is to be added, then many objects are to be created.
+- Instead if a class for shape, clas for colour and class for type is created, then the classess can be combined with the needed parameter ffrom each class to create object
+
+**Use case**
 - It is used in cases where a larger number of class objects would be created / needed , but in which they turn out to be combination of objects that can be split into base objects
 - Use the Bridge pattern when you want to divide and organize a monolithic class that has several variants of some functionality.
 - Use the pattern when you need to extend a class in several orthogonal (independent) dimensions.
+
+**Pros**
 - Also this method can be used for prototype projects which is subject to further enhancement of base features
-- In case of Platform independent implementation this method is significant, but becomes complex if multiple levels are to be realised
-- Application : Variant handing applications or combination leading system applications
+- In case of Platform independent implementation this method is significant.
+- Easy to maintain and enhancement
+
+**Cons**
+- Becomes complex if multiple levels are to be realised
+
+**Real World use case**
+- Variant handing applications 
+- Combination use case applications
